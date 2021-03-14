@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block header %}
+<title>MAIN</title>
+{% endblock %}
+{% block content %}
+{% block page %}
+<CENTER>
+<div style="color:grey;font-style:italic; font-size:40px;position:relative;">Main Page</div><br><br><br>
+    <hr>
+</CENTER>
+    {% endblock %}
+
+<CENTER>
+{% if request.user.is_authenticated %}
+<p style="font-style:italic;font-size:30px;color:grey;">Working Time</p>
+<a href="{% url 'create_time' %}" style="text-decoration:none; color:blue; font-style:italic;font-size:40px">Create Working Time</a><br><br>
+<a href="{% url 'list_time' %}" style="text-decoration:none; color:blue; font-style:italic;font-size:40px">Working Time List</a><br><br>
+    <hr>
+<p style="font-style:italic;font-size:30px;color:grey;">Break Time</p>
+
+<a href="{% url 'break_create' %}" style="text-decoration:none; color:blue; font-style:italic;font-size:40px">Create Break Time</a>
+<br>
+<br>
+<a href="{% url 'break_list' %}" style="text-decoration:none; color:blue; font-style:italic;font-size:40px">Break Time List</a>
+
+{% else %}
+    <a href='{% url "user_register" %}' style="text-decoration:none; color:blue; font-style:italic;font-size:40px">Register</a>
+    <p style="font-style:italic; font-size:30px;color: grey">Or</p>
+    <a href='{% url "login" %}' style="text-decoration:none; color:blue; font-style:italic;font-size:40px">Login To Your Account</a><br><br>
+    <br><br>
+    {% endif %}
+</CENTER>
+    {% endblock %}
