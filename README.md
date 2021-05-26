@@ -19,22 +19,22 @@ Usage:<br>
 </h2>
 <p style="font-size: 18px; font-style: italic; color: #00BFFF">
 1.Clone git repo <br>
-  git clone https://github.com/anonymous203030/DjangoTimer
+  git clone https://github.com/anonymous203030/DjangoTimer <br>
 2.Go into repo<br>
-  cd DjangoTimer
+  cd DjangoTimer<br>
 3.Activate virtualenv <br>
-  python3 -m venv venv
+  python3 -m venv venv <br>
 4. Install python modules from requirements.txt file <br>
-  pip3 install -r requirements.txt
+  pip3 install -r requirements.txt<br>
 5.Make all migrations to make Django programm work<br>
-  ./manage.py makemigrations
-  ./manage.py migrate
+  ./manage.py makemigrations <br>
+  ./manage.py migrate <br>
 6. Run program on local server<br>
-  ./manage.py runserver
+  ./manage.py runserver <br>
 - or <br>
   ./manage.py runserver <port that u want>
-Example:<br>
-  ./manage.py runserver 8080
+Example: <br>
+  ./manage.py runserver 8080<br>
 <hr>
 <br>
 </p>
