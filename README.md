@@ -14,10 +14,34 @@ Daily worked time = The daily time each employeer spend in office - daily break 
 Dockerfile with docker-compose consists of the main project with it's files and depends on redis-server.
 </p>
 <hr>
-<h2 style="color:#00FFFF ">
-Qualifications:
+<h2>
+Usage:<br>
 </h2>
-<p style="font-size: 18px;font-style: italic; color:#00BFFF;">
+<p style="font-size: 18px; font-style: italic; color: #00BFFF">
+1.Clone git repo <br>
+  git clone https://github.com/anonymous203030/DjangoTimer
+2.Go into repo<br>
+  cd DjangoTimer
+3.Activate virtualenv <br>
+  python3 -m venv venv
+4. Install python modules from requirements.txt file <br>
+  pip3 install -r requirements.txt
+5.Make all migrations to make Django programm work<br>
+  ./manage.py makemigrations
+  ./manage.py migrate
+6. Run program on local server<br>
+  ./manage.py runserver
+- or <br>
+  ./manage.py runserver <port that u want>
+Example:<br>
+  ./manage.py runserver 8080
+<hr>
+<br>
+</p>
+<h2 style="color:#00FFFF ">
+Qualifications:<br>
+</h2>
+<p style="font-size: 18px; font-style: italic; color:#00BFFF;">
 Python3, SQL, Linux, Docker, Celery, Redis,<br>
 Django, Django-Rest-Framework, Django-ORM, Pillow, Git
 </p>
